@@ -50,6 +50,21 @@ footer.footer {
 	padding: 10px;
 }
 
+h1 {
+	font-size:xx-large;
+	color: MidnightBlue;
+}
+
+h2 {
+	font-size:x-large;
+	color: MidnightBlue;
+}
+
+h3 {
+	font-size:larger;
+	color: MidnightBlue;
+}
+
 table {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
