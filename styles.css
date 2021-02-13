@@ -44,7 +44,7 @@ div.content {
 	padding: 1px 16px;
 }
 
-div.footer {
+footer.footer {
 	background-color: #f1f1f1;
 	padding: 10px;
 }
@@ -65,7 +65,7 @@ div.footer {
 		margin-left: 0;
 	}
 
-  div.footer {
+	footer.footer {
 		margin-left: 0;
   }  
 }
