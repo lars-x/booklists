@@ -1,98 +1,123 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Kontakt: Vad skall du läsa -- och vem säger så?</title>
+  <meta charset="UTF-8">
+  <meta content="IE=edge"
+        http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <link href="styles.css"
+        rel="stylesheet">
+  <title>Kontakt: Vad skall du läsa -- och vem säger så?</title>
 </head>
-
 <body>
+  <nav>
+    <ul class="sidenav">
+      <li>
+        <a href="litteratur.html"><img alt="Index"
+             height="122"
+             src="logo.gif"
+             width="84"></a>
+      </li>
+      <li>
+        <a href="sverige.html">Svensk litteratur</a>
+      </li>
+      <li>
+        <a href="fiction.html">Utländsk skönlitteratur</a>
+      </li>
+      <li>
+        <a href="nonfiction.html">Utländsk vetenskaplig litteratur</a>
+      </li>
+      <li>
+        <a href="pseudo.html">Pseudovetenskaplig litteratur</a>
+      </li>
+      <li>
+        <a href="it.html">Litteratur för programmerare</a>
+      </li>
+      <li>
+        <a href="referenser.html">Referenser</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    Hedar
+  </header>
+  <div class="content">
+    <h1>Kontakt: Vad skall du läsa -- och vem säger så?</h1>
+    <p>Yes!!</p>
+    <h2>Responsive Sidenav Example</h2>
+    <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
+    <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+    <h3>Resize the browser window to see the effect.</h3>
+    <p>Tillbaka <a href="litteratur.html">Heja Gais</a></p>
+  </div><!-- Search Google -->
+  <form action="http://www.google.com/custom"
+        method="get">
+    <input maxlength="255"
+          name="q"
+          size="31"
+          type="text"
+          value=""> <input name="sa"
+          type="submit"
+          value="Search"> <input name="cof"
+          type="hidden"
+          value="LW:84;L:http://w1.311.telia.com/~u31115557/booklists/logo.gif;LH:122;AH:left;AWFID:abe35e4a5f5b1761;"> <input name="domains"
+          type="hidden"
+          value="w1.311.telia.com"> <input name="sitesearch"
+          type="hidden"
+          value="w1.311.telia.com">
+  </form>
+  <p><!-- Search Google --></p>
+  <main>
+    <h2>HTML Table</h2>
     <nav>
-        <ul class="sidenav">
-            <li> <a href="litteratur.html"> <img src="logo.gif" alt="Index" width="84" height="122"></a></li>
-            <li><a href="sverige.html">Svensk litteratur</a></li>
-            <li><a href="fiction.html">Utländsk skönlitteratur</a></li>
-            <li><a href="nonfiction.html">Utländsk vetenskaplig litteratur</a></li>
-            <li><a href="pseudo.html">Pseudovetenskaplig litteratur</a></li>
-            <li><a href="it.html">Litteratur för programmerare</a></li>
-            <li><a href="referenser.html">Referenser</a></li>
-        </ul>
-
+      <p>Sortera/Visa: <a href="sverige.html">Lista</a> | <a href="sverige_authors.html">Författare</a> | <a href="sverige_books.html">Bok</a> | <a href="sverige_1_500.html">Poäng</a> | <a href="sverige_ref.html">Referenser</a></p>
     </nav>
-
-    <header>Hedar</header>
-
-    <div class="content">
-        <h1>Kontakt: Vad skall du läsa -- och vem säger så?</h1>
-        <p>Yes!!</p>
-        <h2>Responsive Sidenav Example</h2>
-        <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-
-        <p>Tillbaka <a href="litteratur.html">Heja Gais</a></p>
+    <table>
+      <tr>
+        <th>Författare</th>
+        <th>Bok</th>
+        <th>Poäng</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+  </main>
+  <footer class="footer">
+    <hr>
+    <div class="container-fluid">
+      <p class="pull-left">Den här sidan sköts av Lars Johansson &middot; <a href="kontakt.html">Kontaktsida</a></p>
+      <p class="pull-right">Sidan uppdaterades senast 2020-02-02, 20:20.</p>
     </div>
-
-    <main>
-        <h2>HTML Table</h2>
-
-        <nav>
-            <p>
-                Sortera/Visa: <A href="sverige.html">Lista</A> | <A href="sverige_authors.html">Författare</A> | <A href="sverige_books.html">Bok</A> | <A href="sverige_1_500.html">Poäng</A> | <A href="sverige_ref.html">Referenser</A>
-            </p>
-        </nav>
-
-        <table>
-            <tr>
-                <th>Författare</th>
-                <th>Bok</th>
-                <th>Poäng</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-            </tr>
-            <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
-            </tr>
-        </table>
-    </main>
-
-    <footer class="footer">
-        <hr>
-        <div class="container-fluid">
-            <p class="pull-left">Den här sidan sköts av Lars Johansson &middot; <a href="kontakt.html">Kontaktsida</a></p>
-            <p class="pull-right"> Sidan uppdaterades senast 2020-02-02, 20:20.</p>
-        </div>
-    </footer>
-
+  </footer>
 </body>
-
 </html>
