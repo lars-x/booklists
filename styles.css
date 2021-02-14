@@ -64,7 +64,6 @@ h3 {
 }
 
 table {
-	font-family: Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
 }
@@ -99,9 +98,9 @@ tr:nth-child(even) {
 }
 
 video {
-    object-fit: contain;
+	object-fit: contain;
 	width: 100%;
-	max-width:854px;
+	max-width: 854px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -132,5 +131,32 @@ video {
 	}
 	.mobile-break {
 		display: block;
+	}
+}
+
+@media print {
+	body * {
+		visibility: hidden;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	div.content,
+	div.content * {
+		visibility: visible;
+	}
+
+	div.content {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin-left: 0%;
+	}
+
+	nav {
+		display: none;
+	}
+
+	footer {
+		display: none;
 	}
 }
