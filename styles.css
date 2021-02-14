@@ -98,6 +98,12 @@ tr:nth-child(even) {
 	vertical-align: middle;
 }
 
+video {
+    object-fit: contain;
+	width: 100%;
+	max-width:854px;
+}
+
 @media screen and (max-width: 1400px) {
 	ul.sidenav {
 		width: 100%;
