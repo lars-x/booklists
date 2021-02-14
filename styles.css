@@ -29,7 +29,7 @@ ul.sidenav li a {
 }
 
 ul.sidenav li a.active {
-	background-color: #4caf50;
+	background-color: MidnightBlue;
 	color: white;
 }
 
@@ -46,7 +46,10 @@ div.content {
 
 footer.footer {
 	background-color: #f1f1f1;
-	padding: 10px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;	
 }
 
 h1 {
