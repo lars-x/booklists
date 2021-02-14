@@ -27,15 +27,13 @@
   <div class="content">
     <section>
       <h1>Kontaktsida: Vad skall du läsa -- och vem säger så?</h1>
-      <p>Den här sidan sköts av Lars Johansson</p>
-      <p>Världsledande webbdesigner och skidåkare...</p>
-
+      <p>Den här sidan sköts av den världsledande webbdesignern och skidåkaren Lars Johansson...</p>
       <figure>
         <video controls>
           <source src="spring_snow_in_tignes.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <figcaption>The <cite>Blizzard of AAHHH's II</cite> trailer from Golf in Tignes.</figcaption>
+        <figcaption>Den nya skidfilmen <cite>Blizzard of AAHHH's II</cite> trailer från golfbanan i Tignes.</figcaption>
       </figure>
 
       <h2>Info om arbetsgången vid moderniseringen av den klassiska webbplatsen</h2>
@@ -48,7 +46,7 @@
         index-sidan på GitHub Pages.</p>
 
       <h3>Preprocessning av HTML-filerna</h3>
-      <p>Efter att ha "letat runt lite", utan att hitta en färdig lösning, beslöt jag mig för att skriva ett Python-skript...</p>
+      <p>Efter att ha "letat runt lite", utan att hitta en färdig lösning, beslöt jag mig för att skriva ett Python-skript.</p>
 
       <p>Jag ser ett framtida behov av att visa programkod på mina webbsidor. Jag har därför gjort ett "proof of concept":</p>
 
@@ -78,23 +76,26 @@
       <p>Jag började med att låna lite "responsive HTML" från <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
 
       <p>Innan jag fortsatte arbetet med att fixa till de andra sidorna, gjorde jag mallsidan responsive mha media queries i styles.css.
-        Jag har falt att ha tre olika storlekar. Jag har löst detta med två brytpunkter. Till skillnad från nästan alla andra webbdesigners,
+        Jag har valt att ha tre olika storlekar. Jag har löst detta med två brytpunkter. Till skillnad från nästan alla andra webbdesigners,
         som väljer "mobiltelefon först mha min-width, har jag valt "mellanstorlek först" mha max-width.</p>
 
       <p>Not: Jag valde max-width eftersom min webbplats främst vänder sig till folk som sitter vid en dator med lagom stora skärmar.</p>
 
       <p>Mina tre olika storlekar med brytpunkter är:</p>
       <ul>
-        <li>xxxxx-large</li>
-        <li><b>x-large med max-width: 1400px</b></li>
-        <li>small med max-width: 620px</li>
+        <li>XXXXX-large</li>
+        <li><b>X-large med max-width: 1400px</b></li>
+        <li>Small med max-width: 620px</li>
       </ul>
+      <p><b>Small</b>, dvs mobiltelefonstorleken, "stackar" menyn, samt "stoppar in" några sidbrytningar.</p>
+      <p><b>XXXXX-large</b> placerar huvudmenyn till vänster.</p>
       <p>Not: När webbplatsen är klar att driftsättas kommer 1400px att ökas till 4200px...</p>
 
-      <p>small, dvs mobiltelefonstorleken, "stackar" menyn, samt "stoppar in" några sidbrytningar.</p>
-
       <h3>Jobba, jobba...</h3>
-      <p>Sedan återstod bara lite hårt arbete med att klippa och klistra, formattera, samt att validera.</p>
+      <p>Sedan återstod det bara lite hårt arbete med att klippa och klistra, formattera, samt att validera.</p>
+      <p>På:</p>
+      <a href="https://github.com/lars-x/booklists/commits/main">https://github.com/lars-x/booklists/commits/main</a>
+      <p>kan man följa arbetet i kronologk ordning tack vare mina commits.</p>
 
       <p>Länk till validatorn jag använde: <a href="https://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn - W3C's Unified Validator</a></p>
 
@@ -106,15 +107,20 @@
       <p>Jag har inte testat på Apples hårdvara. Detta pga hårdvarubrist.</p>
 
       <hr>
-      <h1>"Lösningar" för uppgifter som kan vara svåra att hitta på webbplatsen</h1>
-      <h2>1.b Tabeller</h2>
-      <p>Intressanta tabeller finns nästan på alla webbplatsens sidor. En tabell är dock lite annorlunda:</p>
+      <h1>Lösningar för uppgifter som kan vara svåra att hitta på webbplatsen</h1>
+      <h2>Del 1.b Tabeller</h2>
+      <p>Intressanta tabeller finns på nästan alla webbplatsens sidor. De flesta är "sorterbara" utan JavaScript.</p> 
+      
+      <p>En tabell är dock lite annorlunda:</p>
       <a href="mbti.html">MBTI -- Myers-Briggs Type Indicator</a>
-      <p>Tyvärr är de flesta länkarna på den sidan brustna.</p>
+      <p>Not: Tyvärr är de flesta länkarna på den sidan brustna.</p>
 
       <hr>
-      <h2>1.b Formulär</h2>
-      <p>På webbplatsens index-sidan finns Googles moderna formulär som fungerar mha JavaScript. Nedan finns två formulär som
+      <h2>Del 1.b Video</h2>
+      <p>En spännande video finns högst upp på den här sidan...</p>
+      <hr>
+      <h2>Del 1.b Formulär</h2>
+      <p>På webbplatsens index-sida finns Googles moderna sökformulär som fungerar mha JavaScript. Nedan finns två formulär som
         använder den klassiska GET-tekniken, samt ett formulär för sökning på svenska Wikipedia.</p>
 
       <h3>Sök bok eller författare på den här sajen</h3>
@@ -137,6 +143,16 @@
         <input type="hidden" name="s" value="sök" />
         <input type="submit" id="cmdSearch" name="b" value="Sök på Wikipedia" />
       </form>
+      
+
+      <hr>
+      <h2>Del 2 Semantiska taggar</h2>
+      <p>Jag använder inte header eller aside.</p>
+
+      <p>Jag hittade ingen tag för att omsluta section, main och footer. Istället använder jag mig av div <b>class="content"</b> för allt
+        som inte är huvudmenyn.
+      </p>
+
       <hr>
     </section>
 
