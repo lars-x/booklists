@@ -35,20 +35,20 @@
           <source src="spring_snow_in_tignes.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <figcaption>The <cite>Blizzard of AAHHH's II</cite> trailer.</figcaption>
+        <figcaption>The <cite>Blizzard of AAHHH's II</cite> trailer from Golf in Tignes.</figcaption>
       </figure>
 
-      <h2>Info om arbetsgången vid moderniseringen av den klassiska sajten</h2>
-      <p>Den förra versionen av sajten låg på telias webbhotell mellan 2000 och 2002. Den klassiska sajten är nu flyttad till GitHub Pages:</p>
+      <h2>Info om arbetsgången vid moderniseringen av den klassiska webbplatsen</h2>
+      <p>Den förra versionen av webbplatsen låg på telias webbhotell mellan 2000 och 2002. Den klassiska webbplatsen är nu flyttad till GitHub Pages:</p>
 
       <h3>Utl�ndsk sk�nlitteratur: Vad skall du l�sa -- och vem s�ger s�?</h3>
       <a href="https://lars-x.github.io/booklists-FrontPage/fiction.htm">https://lars-x.github.io/booklists-FrontPage/fiction.htm</a>
 
-      <p>Som synes har den gamla sajten fått lite problem med åäö (och många andra tecken). Dessutom är det problem med filändelsen htm för
+      <p>Som synes har den gamla webbplatsen fått lite problem med åäö (och många andra tecken). Dessutom är det problem med filändelsen htm för
         index-sidan på GitHub Pages.</p>
 
       <h3>Preprocessning av HTML-filerna</h3>
-      <p>Efter att ha "letat runt lite" utan att hitta en färdig lösning, beslöt jag mig för att skriva ett Python-skript...</p>
+      <p>Efter att ha "letat runt lite", utan att hitta en färdig lösning, beslöt jag mig för att skriva ett Python-skript...</p>
 
       <p>Jag ser ett framtida behov av att visa programkod på mina webbsidor. Jag har därför gjort ett "proof of concept":</p>
 
@@ -62,19 +62,61 @@
         <li>Tyvärr måste man sedan göra några smärre förbättringar av HTML-koden för att den skall validera.</li>
       </ol>
 
-      <h3>Lädda upp de modifierade filerna på GitHub</h3>
+      <h3>Ladda upp de modifierade HTML-filerna på GitHub</h3>
       <p>Länk: <a href="https://github.com/lars-x/booklists">https://github.com/lars-x/booklists</a></p>
-      <p>Aktivera sedan  GitHub Pages, för att få en gratis webbsajt man kan länka till, validera, få Google att hitta etc.</p>
+      <p>Aktivera sedan GitHub Pages, för att få en gratis webbplats man kan länka till, validera, få Google att hitta etc.</p>
       <p>Länk: <a href="https://lars-x.github.io/booklists">https://lars-x.github.io/booklists</a></p>
 
-      <div>
-        <h2>Responsive Sidenav Example</h2>
-        <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-        <p>Tillbaka <a href="index.html">Heja Gais</a></p>
-      </div>
+      <h3>Fixa till HTML-koden ytterligare</h3>
+      <p>Den gamla webbplatsens HTML-kod hade taggar med versala och gemena bokstäver totalt huller om buller. Dessutom hade HTML-koden ful formattering.</p>
+      <p>Den vanliga "formatteraren" i VS Code klarade inte av att fixa till problemen. Jag installerade därför en Extension: vscode-tidyhtml,
+        som i stort sett fixade till problemen.</p>
+
+      <h3>Gör en mall-sida som grund för resten av din webbplats.</h3>
+      <p>Den gamla webbplaten bestod av runt 50 sidor med min mailadress i klartext på samtliga. Jag har sedan dess lärt mig.</p>
+      <p>Jag beslutade mig därför att skapa en enda kontaktsida. Den här sidan. Till en början fungerade den som mall för hela webbplatsen.</p>
+      <p>Jag började med att låna lite "responsive HTML" från <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
+
+      <p>Innan jag fortsatte arbetet med att fixa till de andra sidorna, gjorde jag mallsidan responsive mha media queries i styles.css.
+        Jag har falt att ha tre olika storlekar. Jag har löst detta med två brytpunkter. Till skillnad från nästan alla andra webbdesigners,
+        som väljer "mobiltelefon först mha min-width, har jag valt "mellanstorlek först" mha max-width.</p>
+
+      <p>Not: Jag valde max-width eftersom min webbplats främst vänder sig till folk som sitter vid en dator med lagom stora skärmar.</p>
+
+      <p>Mina tre olika storlekar med brytpunkter är:</p>
+      <ul>
+        <li>xxxxx-large</li>
+        <li><b>x-large med max-width: 1400px</b></li>
+        <li>small med max-width: 620px</li>
+      </ul>
+      <p>Not: När webbplatsen är klar att driftsättas kommer 1400px att ökas till 4200px...</p>
+
+      <p>small, dvs mobiltelefonstorleken, "stackar" menyn, samt "stoppar in" några sidbrytningar.</p>
+
+      <h3>Jobba, jobba...</h3>
+      <p>Sedan återstod bara lite hårt arbete med att klippa och klistra, formattera, samt att validera.</p>
+
+      <p>Länk till validatorn jag använde: <a href="https://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn - W3C's Unified Validator</a></p>
+
+      <h3>Testa, testa...</h3>
+      <p>Jag har nästan enbart testat webbplatsen på <a href="https://lars-x.github.io/booklists">https://lars-x.github.io/booklists</a>.</p>
+      <p>Förhoppningsvis fungerar den på andra webbhotell också.</p>
+      <p>Jag har testat Firefox och Chrome på Windows 10. Och lite Internet Explorer 6 på Windows XP...</p>
+      <p>Jag har också testat Firefox och Chrome på Samsung Galaxy 7.</p>
+      <p>Jag har inte testat på Apples hårdvara. Detta pga hårdvarubrist.</p>
+
+      <hr>
+      <h1>"Lösningar" för uppgifter som kan vara svåra att hitta på webbplatsen</h1>
+      <h2>1.b Tabeller</h2>
+      <p>Intressanta tabeller finns nästan på alla webbplatsens sidor. En tabell är dock lite annorlunda:</p>
+      <a href="mbti.html">MBTI -- Myers-Briggs Type Indicator</a>
+      <p>Tyvärr är de flesta länkarna på den sidan brustna.</p>
+
+      <hr>
+      <h2>1.b Formulär</h2>
+      <p>På webbplatsens index-sidan finns Googles moderna formulär som fungerar mha JavaScript. Nedan finns två formulär som
+        använder den klassiska GET-tekniken, samt ett formulär för sökning på svenska Wikipedia.</p>
+
       <h3>Sök bok eller författare på den här sajen</h3>
       <form action="https://www.google.com/custom" method="get">
         <input name="q" placeholder="Bok eller författare" size="31" type="text" value="">
