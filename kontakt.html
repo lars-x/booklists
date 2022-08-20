@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="En sida om böcker" name="description">
+  <meta content="Skönlitteratur, Facklitteratur" name="keywords">
+  <meta content="Lars Johansson" name="author">
+  <link href="styles.css" rel="stylesheet">
+  <title>Kontaktsida: Vad skall du läsa -- och vem säger så?</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="sidenav">
+      <li><a href="index.html"><img alt="Hoppa till startsidan" height="122" src="logo.gif" width="84"></a></li>
+      <li><a href="sverige.html">Svensk litteratur</a></li>
+      <li><a href="fiction.html">Utländsk skönlitteratur</a></li>
+      <li><a href="nonfiction.html">Utländsk vetenskaplig litteratur</a></li>
+      <li><a href="pseudo.html">Pseudovetenskaplig litteratur</a></li>
+      <li><a href="it.html">Litteratur för programmerare</a></li>
+      <li><a href="referenser.html">Referenser</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <section>
+      <h1>Kontaktsida: Vad skall du läsa -- och vem säger så?</h1>
+      <p>Den här sajten sköts av den världsledande webbdesignern och skidåkaren Lars Johansson...</p>
+      <figure>
+        <video controls>
+          <source src="spring_snow_in_tignes.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Den nya skidfilmen <cite>Blizzard of AAHHH's II</cite> trailer från golfbanan i Tignes.</figcaption>
+      </figure>
+
+      <h3>Sök bok eller författare på den här sajen</h3>
+      <form action="https://www.google.com/custom" method="get">
+        <input name="q" placeholder="Bok eller författare" size="31" type="text" value="">
+        <input name="sitesearch" type="hidden" value="lars-x.github.io">
+        <input name="sa" type="submit" value="Sök på Google">
+      </form>
+      <h3>Sök bok eller författare på wikipedia.com</h3>
+      <form action="https://www.google.com/custom" method="get">
+        <input name="q" placeholder="Bok eller författare" size="31" type="text" value="">
+        <input name="sitesearch" type="hidden" value="wikipedia.com">
+        <input name="sa" type="submit" value="Sök på Google">
+      </form>
+      <h3>Sök bok eller författare på wikipedia.se mha Wikipedias svenska sökmotor</h3>
+      <form id="frmSearch" action="https://sv.wikipedia.org/wiki/Special:Search" method="get" accept-charset="UTF-8" name="frmSearch">
+        <input type="text" id="txtSearch" name="search" size="31" placeholder="Bok eller författare" autocomplete="off" />
+        <input type="hidden" name="l" id="l" value="sv" />
+        <input type="hidden" name="e" value="wikipedia" />
+        <input type="hidden" name="s" value="sök" />
+        <input type="submit" id="cmdSearch" name="b" value="Sök på Wikipedia" />
+      </form>
+      <hr>
+    </section>
+
+    <footer class="footer">
+      <p>Den här sidan sköts av Lars Johansson &middot; <a href="kontakt.html">Kontaktsida</a></p>
+      <p>Sidan uppdaterades senast 2020-02-02, 20:20.</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+        </a>
+        <br class="mobile-break">
+        <a href="https://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn - W3C's Unified Validator</a>
+      </p>
+    </footer>
+  </div> <!-- class="content" -->
+</body>
+
+</html>
